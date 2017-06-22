@@ -1,0 +1,48 @@
+.media-object {
+  max-width: 200px;
+}
+
+[ng-click] {
+  cursor: pointer;
+}
+
+.search-form {
+  margin-top: 4px;
+}
+
+main.container {
+  margin-bottom: 4em;
+}
+
+main{
+  margin:10px;
+}
+
+.post-bar{
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.text-left{
+  margin-top: 15px;
+}
+
+.comment-container{
+  height: 220px;
+  padding: 0;
+  margin: 0;
+}
+
+.delete-btn{
+  position: relative;
+  /*top: 80px;*/
+}
+
+.comment-submit{
+  margin-top: 10px;
+}
+
+h5{
+  margin: 0;
+}

@@ -1,0 +1,38 @@
+<div class="form-size">
+  <h2>{{post.title}}</h2>
+  <div class="well">
+    <form novalidate ng-model="$ctrl.post.id" name="editPost" class="form-horizontal" ng-submit="$ctrl.editPost($event)">
+        <fieldset>
+            <div class="form-group">
+                <label for="title" class="col-lg-2 control-label">Title</label>
+                <div class="col-lg-8">
+                    <input type="text" name="title" class="form-control" ng-model="$ctrl.post.title" ng-minlength=3 ng-maxlength=40 required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="author" class="col-lg-2 control-label">Author</label>
+                <div class="col-lg-8">
+                    <input type="text" name="author" class="form-control" ng-model="$ctrl.post.author" ng-minlength=3 ng-maxlength=40 required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="body" class="col-lg-2 control-label">Body</label>
+                <div class="col-lg-8">
+                    <input type="text" name="body" class="form-control" ng-model="$ctrl.post.body" ng-minlength=3 ng-maxlength=40 required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="image_url" class="col-lg-2 control-label">Image URL</label>
+                <div class="col-lg-8">
+                    <input type="url" name="image_url" class="form-control" ng-model="$ctrl.post.image_url" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-2">
+                    <button type="submit" class="btn btn-success">Update Post</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+  </div>
+</div>
